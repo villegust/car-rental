@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import BgShape from "../images/LandingPage/landingPageImg.png";
 import HeroCar from "../images/LandingPage/landingPageImg.png";
+
+import {
+  faAngleRight,
+  faCalendarCheck,
+} from "@fortawesome/free-solid-svg-icons";
 
 function LandingPage() {
   const bookBtn = () => {
@@ -31,13 +37,13 @@ function LandingPage() {
                   className="landPage-content__text__btns__book-ride"
                   to="/"
                 >
-                  Book Ride
+                  Book Ride <FontAwesomeIcon icon={faCalendarCheck} />
                 </Link>
                 <Link
                   className="landPage-content__text__btns__learn-more"
                   to="/"
                 >
-                  Learn More
+                  Learn More <FontAwesomeIcon icon={faAngleRight} />
                 </Link>
               </div>
             </div>

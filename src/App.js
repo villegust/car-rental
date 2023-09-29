@@ -2,6 +2,10 @@ import './dist/styles.css';
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
+import About from "./pages/About"
+import Models from "./pages/Models"
+import Team from "./pages/Team"
+import Contact from "./pages/Contact"
 
 function App() {
   return (
@@ -9,6 +13,10 @@ function App() {
     <Navbar />
       <Routes>
           <Route index path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/models" element={<Models />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
