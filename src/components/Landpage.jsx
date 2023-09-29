@@ -16,10 +16,11 @@ function LandingPage() {
           {/* <img className="bg-shape" src={BgShape} alt="bg-shape" /> */}
           <div className="landPage-content">
             <div className="landPage-content__text">
-              <h4>Plan your trip now</h4>
-              <h1>
-                Save <span>big</span> with on your next rental
-              </h1>
+              <h4>Plan your next trip!</h4>
+              <h2>
+                Drive off with <span>substantial</span> savings on your next
+                rental.
+              </h2>
               <p>
                 Get the car you've always dreamed of. Incredible rates, endless
                 miles, versatile pick-up choices, and a whole lot more.

@@ -38,12 +38,6 @@ function Navbar() {
             </li>
             <li>
               {" "}
-              <Link className="testi-link" to="/testimonials">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              {" "}
               <Link className="team-link" to="/team">
                 Our Team
               </Link>
