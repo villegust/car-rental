@@ -9,7 +9,7 @@ function Footer() {
           <div className="footer-content">
             <ul className="footer-content__1">
               <li>
-                <span>Car</span> Rental
+                <span>Exclusive</span> Car Rental
               </li>
               <li>
                 We provide an extensive selection of vehicles to suit to your
