@@ -5,11 +5,15 @@ footer {
     padding: 40px 0;
 
     .footer-content {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        color: #010103;
+        grid-template-columns: 33fr 23fr 20fr;
+        gap: 8rem;
+        justify-content: center;
+        text-align: left;
+        color: $text-black;
         &__1{
             list-style: none;
-            max-width: 30rem;
             li{
                 a{
                     text-decoration: none;
@@ -42,7 +46,6 @@ footer {
         }
         &__2{
             list-style: none;
-            max-width: 30rem;
             li{
                 font-size: $p-size;
                 margin-bottom: 1rem;

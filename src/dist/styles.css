@@ -253,6 +253,7 @@ body {
 .booking-section {
   position: relative;
   background-color: #f8f8f8;
+  padding-bottom: 100px;
 }
 
 .booking-content {
@@ -521,17 +522,71 @@ body {
   gap: 3.2rem;
 }
 
+.plan-section {
+  background-color: #f8f8f8;
+  padding-bottom: 100px;
+}
+
+.plan-container {
+  display: flex;
+  flex-direction: column;
+}
+.plan-container__title {
+  color: #010103;
+  margin: 0 auto;
+  text-align: center;
+}
+.plan-container h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.plan-container h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 4.2rem;
+  margin: 1.3rem 0 3rem;
+}
+.plan-container__boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-top: 6rem;
+  padding: 0 3rem;
+}
+.plan-container__boxes__infoBox {
+  padding: 1rem 6rem;
+  text-align: center;
+}
+.plan-container__boxes__infoBox img {
+  width: 10rem;
+  height: auto;
+}
+.plan-container__boxes__infoBox h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.plan-container__boxes__infoBox p {
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  color: #706f7b;
+  line-height: 1.43;
+}
+
 footer {
   background-color: #ffffff;
   padding: 40px 0;
 }
 footer .footer-content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  color: #010103;
+  grid-template-columns: 33fr 23fr 20fr;
+  gap: 8rem;
+  justify-content: center;
+  text-align: left;
+  color: #010103;
 }
 footer .footer-content__1 {
   list-style: none;
-  max-width: 30rem;
 }
 footer .footer-content__1 li a {
   text-decoration: none;
@@ -560,7 +615,6 @@ footer .footer-content__1 li:nth-child(3), footer .footer-content__1 li:nth-chil
 }
 footer .footer-content__2 {
   list-style: none;
-  max-width: 30rem;
 }
 footer .footer-content__2 li {
   font-size: 1.5rem;
