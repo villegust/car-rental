@@ -15,6 +15,12 @@ function LandingPage() {
       .scrollIntoView({ behavior: "smooth" });
   };
 
+  const viewModelsBtn = () => {
+    document
+      .querySelector("#model-section")
+      .scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <section id="home" className="landPage-section">
@@ -40,10 +46,11 @@ function LandingPage() {
                   Book Ride <FontAwesomeIcon icon={faCalendarCheck} />
                 </Link>
                 <Link
-                  className="landPage-content__text__btns__learn-more"
+                  onClick={viewModelsBtn}
+                  className="landPage-content__text__btns__view-models"
                   to="/"
                 >
-                  Learn More <FontAwesomeIcon icon={faAngleRight} />
+                  View Models <FontAwesomeIcon icon={faAngleRight} />
                 </Link>
               </div>
             </div>
