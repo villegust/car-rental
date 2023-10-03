@@ -1,8 +1,11 @@
+import Navbar from "../components/Navbar";
+
 import Footer from "../components/Footer";
 
 function Team() {
   return (
     <>
+      <Navbar />
       <Footer />
     </>
   );

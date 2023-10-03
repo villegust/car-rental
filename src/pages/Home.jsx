@@ -1,3 +1,5 @@
+import Navbar from "../components/Navbar";
+
 import Landpage from "../components/Landpage";
 import BookCar from "../components/BookCar";
 import Footer from "../components/Footer";
@@ -7,6 +9,8 @@ import Models from "../components/Models";
 function Home() {
   return (
     <>
+      <Navbar />
+
       <Landpage />
       <Models />
       <Plan />
