@@ -766,9 +766,15 @@ footer .footer-content__2 li:nth-child(1) {
 }
 
 .login-content {
-  padding: 5rem;
+  padding: 4rem 10rem 4rem 10rem;
   min-width: 25%;
   border-radius: 10px;
+  background-color: #f1f1f1;
+}
+@media screen and (max-width: 500px) {
+  .login-content {
+    padding: 2rem 4rem 2rem 4rem;
+  }
 }
 .login-content__title {
   margin-bottom: 4rem;
@@ -776,7 +782,40 @@ footer .footer-content__2 li:nth-child(1) {
 }
 .login-content__title h2 {
   font-size: 3rem;
+  color: #4b4b4b;
+}
+.login-content__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.login-content__login-with {
+  margin-bottom: 3rem;
+}
+.login-content__login-with button {
+  padding: 1.5rem 4.2rem;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  border-radius: 0.75rem;
+  border: none;
+}
+.login-content__login-with button#facebook {
+  background-color: #4267B2;
   color: #fff;
+}
+.login-content__login-with button#google {
+  background-color: #f1f1f1;
+  border: 2px solid rgb(167, 166, 166);
+}
+.login-content__login-with button:hover {
+  cursor: pointer;
+}
+.login-content__login-with button:hover#facebook {
+  background-color: #4f7bd4;
+}
+.login-content__login-with button:hover#google {
+  background-color: #cecece;
 }
 .login-content__login {
   display: flex;
@@ -785,29 +824,36 @@ footer .footer-content__2 li:nth-child(1) {
 }
 .login-content__login input {
   font-size: 1.6rem;
-  color: #fff;
-  background-color: rgba(180, 180, 180, 0.7882352941);
+  color: #4b4b4b;
+  background-color: rgba(224, 224, 224, 0.7882352941);
   font-family: "Rubik", sans-serif;
   border-radius: 5px;
   font-weight: 400;
-  padding: 1.8rem 3.5rem;
+  padding: 1.8rem 4rem;
   outline: none;
   border: none;
 }
-.login-content__login input:focus {
-  box-shadow: -3px 20px 32px -11px rgba(0, 0, 0, 0.81);
+.login-content__login a {
+  margin-top: 0.75rem;
+  color: #4b4b4b;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 .login-content__login__icon {
   position: absolute;
-  padding: 1.6rem 1rem;
+  padding: 1.6rem 1.3rem;
+}
+.login-content__login__icon img {
+  width: 20px;
+  height: 20px;
 }
 .login-content__login__loginBtn {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
-.login-content__login__loginBtn a {
-  background-color: rgba(209, 209, 209, 0.9058823529);
+.login-content__login__loginBtn button {
+  background-color: rgba(61, 61, 61, 0.9058823529);
   color: #fff;
   width: 100%;
   border: none;
@@ -818,12 +864,157 @@ footer .footer-content__2 li:nth-child(1) {
   padding: 1.5rem 2rem;
   text-align: center;
   transition: all 0.2s;
-  border-radius: 30px;
+  border-radius: 0.75rem;
   text-decoration: none;
 }
-.login-content__login__loginBtn a:hover {
-  background-color: rgba(150, 150, 150, 0.1176470588);
+.login-content__login__loginBtn button:hover {
+  background-color: rgba(63, 63, 63, 0.8156862745);
   box-shadow: -3px 20px 32px -11px rgba(0, 0, 0, 0.81);
+}
+.login-content .register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.login-content .register span {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+  color: #4b4b4b;
+}
+.login-content .register a {
+  color: #4b4b4b;
+  font-weight: 600;
+}
+
+.register-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../images/Accounts/loginbg.jpg");
+}
+
+.register-content {
+  padding: 4rem 10rem 4rem 10rem;
+  min-width: 25%;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+}
+@media screen and (max-width: 500px) {
+  .register-content {
+    padding: 2rem 4rem 2rem 4rem;
+  }
+}
+.register-content__title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.register-content__title h2 {
+  font-size: 3rem;
+  color: #4b4b4b;
+}
+.register-content__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.register-content__register-with {
+  margin-bottom: 3rem;
+}
+.register-content__register-with button {
+  padding: 1.5rem 4.2rem;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  border-radius: 0.75rem;
+  border: none;
+}
+.register-content__register-with button#facebook {
+  background-color: #4267B2;
+  color: #fff;
+}
+.register-content__register-with button#google {
+  background-color: #f1f1f1;
+  border: 2px solid rgb(167, 166, 166);
+}
+.register-content__register-with button:hover {
+  cursor: pointer;
+}
+.register-content__register-with button:hover#facebook {
+  background-color: #4f7bd4;
+}
+.register-content__register-with button:hover#google {
+  background-color: #cecece;
+}
+.register-content__register {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.register-content__register input {
+  font-size: 1.6rem;
+  color: #4b4b4b;
+  background-color: rgba(224, 224, 224, 0.7882352941);
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+  font-weight: 400;
+  padding: 1.8rem 4rem;
+  outline: none;
+  border: none;
+}
+.register-content__register a {
+  margin-top: 0.75rem;
+  color: #4b4b4b;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.register-content__register__icon {
+  position: absolute;
+  padding: 1.6rem 1.3rem;
+}
+.register-content__register__icon img {
+  width: 20px;
+  height: 20px;
+}
+.register-content__register__registerBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.register-content__register__registerBtn button {
+  background-color: rgba(61, 61, 61, 0.9058823529);
+  color: #fff;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  transition: all 0.2s;
+  border-radius: 0.75rem;
+  text-decoration: none;
+}
+.register-content__register__registerBtn button:hover {
+  background-color: rgba(63, 63, 63, 0.8156862745);
+  box-shadow: -3px 20px 32px -11px rgba(0, 0, 0, 0.81);
+}
+.register-content .register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.register-content .register span {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+  color: #4b4b4b;
+}
+.register-content .register a {
+  color: #4b4b4b;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=styles.css.map */

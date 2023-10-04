@@ -81,7 +81,7 @@ function BookCar() {
       imgUrl = astonmartinCar;
       break;
 
-    case "Lamborgini Urus":
+    case "Lamborghini Urus":
       imgUrl = lamborginiUrus;
       break;
 
@@ -126,7 +126,7 @@ function BookCar() {
                       Porsche 911 GT3 RS
                     </option>
                     <option value="Aston Martin DB5">Aston Martin DB5</option>
-                    <option value="Lamborgini Urus">Lamborgini Urus</option>
+                    <option value="Lamborghini Urus">Lamborgini Urus</option>
                     <option value="Koenigsegg Jesko">Koenigsegg Jesko</option>
                   </select>
                 </div>

@@ -1,56 +1,68 @@
-function Carbox() {
+import { useState } from "react";
+
+function Carbox({ data, carID }) {
+  const [carLoad, setCarLoad] = useState(true);
+
   return (
     <>
-      <div className="car-box">
-        <div className="picked-car">
-          <img src={Car} alt="Image of chosen car" />
-        </div>
+      {data[carID].map((car, id) => {
+        return (
+          <div key={id} className="car-box">
+            <div className="picked-car">
+              <img
+                src={car.img}
+                alt="Image of chosen car"
+                onLoad={() => setCarLoad(false)}
+              />
+            </div>
 
-        <div className="car-info">
-          <div className="car-info__price">
-            <span>1000 kr</span>/ day rent
+            <div className="car-info">
+              <div className="car-info__price">
+                <span>{car.price} kr</span>/ day rent
+              </div>
+
+              <div className="car-info__table">
+                <div className="car-info__table__col">
+                  <span>Model</span>
+                  <span>{car.mark}</span>
+                </div>
+
+                <div className="car-info__table__col">
+                  <span>Mark</span>
+                  <span>{car.model}</span>
+                </div>
+
+                <div className="car-info__table__col">
+                  <span>Year</span>
+                  <span>{car.year}</span>
+                </div>
+                <div className="car-info__table__col">
+                  <span>Doors</span>
+                  <span>{car.doors}</span>
+                </div>
+
+                <div className="car-info__table__col">
+                  <span>AC</span>
+                  <span>{car.ac}</span>
+                </div>
+
+                <div className="car-info__table__col">
+                  <span>Transmission</span>
+                  <span>{car.transmission}</span>
+                </div>
+
+                <div className="car-info__table__col">
+                  <span>Fuel</span>
+                  <span>{car.fuel}</span>
+                </div>
+              </div>
+              <a className="reserve-btn" href="#booking-section">
+                Reserve
+              </a>
+            </div>
           </div>
-
-          <div className="car-info__table">
-            <div className="car-info__table__col">
-              <span>Model</span>
-              <span>Audi</span>
-            </div>
-
-            <div className="car-info__table__col">
-              <span>Mark</span>
-              <span>RS6</span>
-            </div>
-
-            <div className="car-info__table__col">
-              <span>Year</span>
-              <span>2022</span>
-            </div>
-            <div className="car-info__table__col">
-              <span>Doors</span>
-              <span>4</span>
-            </div>
-
-            <div className="car-info__table__col">
-              <span>AC</span>
-              <span>Yes</span>
-            </div>
-
-            <div className="car-info__table__col">
-              <span>Transmission</span>
-              <span>Automatic</span>
-            </div>
-
-            <div className="car-info__table__col">
-              <span>Fuel</span>
-              <span>Gasoline</span>
-            </div>
-          </div>
-          <a className="reserve-btn" href="#booking-section">
-            Reserve
-          </a>
-        </div>
-      </div>
+        );
+      })}
     </>
   );
 }

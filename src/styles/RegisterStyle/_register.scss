@@ -1,6 +1,6 @@
 @use "../global" as *;
 
-.login-section {
+.register-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
     background-image: url("../images/Accounts/loginbg.jpg");
 }
 
-.login-content{
+.register-content{
     padding: 4rem 10rem 4rem 10rem ;
     min-width: 25%;
     border-radius: 10px;
@@ -36,7 +36,7 @@
     }
 
     
-    &__login-with{
+    &__register-with{
         margin-bottom: 3rem;
     
         button{
@@ -76,7 +76,7 @@
     }
 
 
-    &__login{
+    &__register{
         display: flex;
         flex-direction: column;
         margin-top: 20px;
@@ -112,7 +112,7 @@
             }
         }
 
-        &__loginBtn{
+        &__registerBtn{
             display: flex;
             justify-content: center;
             margin-top: 2rem;
