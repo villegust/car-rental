@@ -8,12 +8,12 @@ import porscheCar from "../images/Cars/Porsche_911_GT3_RS.jpg";
 import koenigseggCar from "../images/Cars/Koenigsegg-Jesko.jpg";
 import astonmartinCar from "../images/Cars/aston-martin.jpg";
 import lamborginiUrus from "../images/Cars/lamborghini-urus.jpg";
+import CarPicker from "./CarPicker";
 
-function BookCar() {
+function BookCar({ carType, setCarType }) {
   const [modal, setModal] = useState(false);
 
   //   booking useStates
-  const [carType, setCarType] = useState("");
   const [pickUp, setPickUp] = useState("");
   const [dropOff, setDropOff] = useState("");
   const [pickUpTime, setPickUpTime] = useState("");
@@ -23,7 +23,6 @@ function BookCar() {
   useEffect(() => {
     if (modal === true) {
       document.body.style.overflow = "hidden";
-      console.log("Owerflow should be hidden");
     } else {
       document.body.style.overflow = "auto";
     }
@@ -32,7 +31,11 @@ function BookCar() {
   const handleCar = (e) => {
     setCarType(e.target.value);
     setCarImage(e.target.value);
+    console.log("Handle car runs");
   };
+  useEffect(() => {
+    setCarImage(carType);
+  }, [carType]);
 
   const openModal = (e) => {
     e.preventDefault();
@@ -88,6 +91,9 @@ function BookCar() {
     case "Koenigsegg Jesko":
       imgUrl = koenigseggCar;
       break;
+
+    default:
+      imgUrl = "";
   }
 
   return (

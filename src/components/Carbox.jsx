@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Carbox({ data, carID }) {
+function Carbox({ data, carID, setCarType, selectedCar }) {
   const [carLoad, setCarLoad] = useState(true);
 
   return (
@@ -56,7 +56,11 @@ function Carbox({ data, carID }) {
                   <span>{car.fuel}</span>
                 </div>
               </div>
-              <a className="reserve-btn" href="#booking-section">
+              <a
+                className="reserve-btn"
+                href="#booking-section"
+                onClick={() => setCarType(selectedCar)}
+              >
                 Reserve
               </a>
             </div>

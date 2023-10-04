@@ -50,7 +50,7 @@ function LandingPage() {
                   className="landPage-content__text__btns__view-models"
                   to="/"
                 >
-                  View Models <FontAwesomeIcon icon={faAngleRight} />
+                  View Cars <FontAwesomeIcon icon={faAngleRight} />
                 </Link>
               </div>
             </div>

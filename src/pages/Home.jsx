@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import Navbar from "../components/Navbar";
 
 import { CAR_DATA } from "../components/Data/carData";
@@ -9,14 +11,17 @@ import Plan from "../components/Plan";
 import CarPicker from "../components/CarPicker";
 
 function Home() {
+  const [carType, setCarType] = useState("");
+  console.log(carType);
+
   return (
     <>
       <Navbar />
 
       <Landpage />
-      <CarPicker carData={CAR_DATA} />
+      <CarPicker carData={CAR_DATA} setCarType={setCarType} />
       <Plan />
-      <BookCar />
+      <BookCar carType={carType} setCarType={setCarType} />
       <Footer />
     </>
   );
