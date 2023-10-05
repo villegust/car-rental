@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 // TODO: Move the reserve button to this component
 
@@ -11,11 +11,24 @@ function BookingModal({
   pickUpTime,
   dropOffTime,
   imgUrl,
+  setModal,
+  modal,
 }) {
+  const closeModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <>
       <div className="booking-modal__title">
-        <h2>Complete your reservation</h2>
+        <h2>Complete reservation</h2>
+        <span onClick={closeModal}>
+          <FontAwesomeIcon
+            icon={faXmark}
+            size="2xl"
+            style={{ color: "#fff" }}
+          />
+        </span>
       </div>
       <div className="booking-modal__car-info">
         <div className="carInfo-div">

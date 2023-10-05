@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .plan-section{
-    background-color: $bg-gray;
+    background: linear-gradient(to top, $bg-gray 20%, $bg-white 80%);
     padding-bottom: 100px;
     padding-top: 40px;
 }
@@ -35,9 +35,17 @@
         margin-top: 6rem;
         padding: 0 3rem;
 
+        @media (max-width: 800px) {
+            grid-template-columns: 1fr;
+        }
+
         &__infoBox{
             padding: 1rem 6rem;
             text-align: center;
+
+            @media (max-width: 360px) {
+                padding: 2rem;
+            }
 
             img{
                 width: 10rem;

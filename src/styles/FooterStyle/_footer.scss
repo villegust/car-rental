@@ -12,6 +12,11 @@ footer {
         justify-content: center;
         text-align: left;
         color: $text-black;
+
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr;            
+        }
+
         &__1{
             list-style: none;
             li{

@@ -28,6 +28,11 @@
         color: $text-black;
 
     }
+
+    @media (max-width: 400px) {
+        padding: 4rem 2.5rem 5rem 2.5rem;
+      }
+
     h2 {
         font-size: $h5-size;
         font-weight: 700;
@@ -35,14 +40,22 @@
       }
 
       .form-box{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 2rem;
+
+        @media (max-width: 1000px) {
+            grid-template-columns: 1fr 1fr;
+          }
+    
+          @media (max-width: 630px) {
+            grid-template-columns: 1fr;
+          }
 
         &__car-type{
             display: inherit;
             flex-direction: column;
-            width: 32%;
 
             label{
                 font-size: $p-size;
@@ -59,6 +72,7 @@
                 font-weight: 400;
                 padding: 1.2rem 1.3rem;
                 outline: none;
+                border: none;
             }
         }
 
@@ -70,13 +84,12 @@
             display: inherit;
             flex-direction: column;
             position: relative;
-            width: 32%;
 
             input{
                 font-size: 1.2rem;
                 font-family: $text-font;
                 color: #878585;
-                border: 1px solid #494949;
+                border: 1px solid #c4c4c4;
                 padding: 1rem 0.75rem;
 
 
@@ -93,7 +106,6 @@
         button{
             padding: 1.3rem 1.3rem;
             height: fit-content;
-            width: 32%;
             align-self: self-end;
             border: none;
             font-family: $text-font;
@@ -172,6 +184,18 @@
     border: 2px solid white;
     background-color: rgba(255, 255, 255);
     color: $text-black;
+
+    @media (max-width: 1100px) {
+        width: 80%;
+      }
+
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+    
+      @media (max-width: 800px) {
+        top: 50%;
+      }
     
     &__title {
         display: flex;
@@ -185,6 +209,10 @@
           font-size: $h3-size;
           text-transform: uppercase;
         }
+
+        span{
+            cursor: pointer;
+        }
     }   
     
     &__car-info{
@@ -192,6 +220,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         border-bottom: 1px solid #494949;
+
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr;
+            text-align: center;
+          }
 
         &__carInfo{
             display: flex;
@@ -259,7 +292,13 @@
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
             padding: 1rem 0;
+
+            @media (max-width: 420px) {
+                grid-template-columns: 1fr;
+              }
         }
+
+      
 
         p{
             font-size: 1.1rem;
