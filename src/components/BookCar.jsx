@@ -1,3 +1,5 @@
+import React from "react";
+
 import BookingModal from "./Modal/BookingModal";
 import { useState, useEffect } from "react";
 
@@ -8,7 +10,6 @@ import porscheCar from "../images/Cars/Porsche_911_GT3_RS.jpg";
 import koenigseggCar from "../images/Cars/Koenigsegg-Jesko.jpg";
 import astonmartinCar from "../images/Cars/aston-martin.jpg";
 import lamborginiUrus from "../images/Cars/lamborghini-urus.jpg";
-import CarPicker from "./CarPicker";
 
 function BookCar({ carType, setCarType }) {
   const [modal, setModal] = useState(false);

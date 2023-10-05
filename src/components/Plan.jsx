@@ -1,3 +1,5 @@
+import React from "react";
+
 import icon1 from "../images/Plan/icon1.png";
 import icon2 from "../images/Plan/icon2.png";
 import icon3 from "../images/Plan/icon3.png";

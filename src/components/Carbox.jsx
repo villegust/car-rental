@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useState } from "react";
 
 function Carbox({ data, carID, setCarType, selectedCar }) {
