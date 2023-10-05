@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
-import { faSquareFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 import Google from "../images/Accounts/google-login.png";
 
 function Login() {
@@ -59,7 +59,7 @@ function Login() {
               />
             </div>
             <input type="password" name="" id="" placeholder="Password" />
-            <a href="">Forgot password?</a>
+            <a href="/forgotPassword">Forgot password?</a>
           </div>
           <div className="login-content__login__loginBtn">
             <button onClick={handleLogin}>Login</button>

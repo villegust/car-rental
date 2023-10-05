@@ -1,21 +1,13 @@
 import React from "react";
 
-import { useState } from "react";
-
 function Carbox({ data, carID, setCarType, selectedCar }) {
-  const [carLoad, setCarLoad] = useState(true);
-
   return (
     <>
       {data[carID].map((car, id) => {
         return (
           <div key={id} className="car-box">
             <div className="picked-car">
-              <img
-                src={car.img}
-                alt="Image of chosen car"
-                onLoad={() => setCarLoad(false)}
-              />
+              <img src={car.img} alt="Chosen car" />
             </div>
 
             <div className="car-info">
