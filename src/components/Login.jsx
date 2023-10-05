@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
@@ -65,7 +66,7 @@ function Login() {
           </div>
           <div className="register">
             <span>
-              Don't have a account? <a href="/register">Register</a>
+              Don't have a account? <Link to={"/register"}>Register</Link>
             </span>
           </div>
         </div>
