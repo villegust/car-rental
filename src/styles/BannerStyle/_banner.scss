@@ -1,0 +1,51 @@
+@use "../global" as *;
+
+.banner{
+    background-image: url("../images/Banner/banner.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    position: relative;
+    width: 100%;
+    
+    &__overlay{
+        background-color: hsla(0, 0%, 100%, 0.849);
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    &__text{
+        color: #010103;
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        z-index: 3;
+
+        h3{
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        p{
+            
+            font-size: 1.6rem;
+            font-family: $text-font;
+            font-weight: 500;
+
+            a{
+                color: black;
+
+                &:hover{
+                    color: $text-blue;
+                }
+            }
+        }
+    }
+}

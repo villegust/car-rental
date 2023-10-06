@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
-import { faSquareFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 import Google from "../images/Accounts/google-login.png";
 
 function Register() {
@@ -37,7 +37,9 @@ function Register() {
               <div className="register-content__register__icon">
                 <img src={Google} alt="" />
               </div>
-              <button id="google">Google</button>
+              <button id="google">
+                <a href="https://www.google.com/">Google</a>
+              </button>
             </div>
           </div>
 

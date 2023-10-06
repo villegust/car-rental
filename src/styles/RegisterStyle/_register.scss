@@ -10,12 +10,11 @@
 
 .register-content{
     padding: 4rem 10rem 4rem 10rem ;
-    min-width: 25%;
     border-radius: 10px;
     background-color: #f1f1f1;
 
     @media screen and (max-width: 500px){
-        padding: 2rem 4rem 2rem 4rem ;
+        padding: 1rem 2rem 1rem 2rem ;
     }
 
     &__title{
@@ -37,7 +36,7 @@
 
     
     &__register-with{
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     
         button{
             padding: 1.5rem 4.2rem;
@@ -45,10 +44,6 @@
             font-family: $text-font;
             border-radius: .75rem;
             border: none;
-
-            @media screen and (max-width: 500px){
-                
-            }
     
             &#facebook{
                 background-color: #4267B2;
@@ -58,6 +53,11 @@
             &#google{
                 background-color: #f1f1f1;
                 border: 2px solid rgb(167, 166, 166);
+
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
 
             }
 
@@ -91,9 +91,9 @@
             padding: 1.8rem 4rem;
             outline: none;
             border: none;
-        }
 
-        
+
+        }
 
         a{
             margin-top: .75rem;

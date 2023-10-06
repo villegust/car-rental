@@ -37,7 +37,9 @@ function Login() {
               <div className="login-content__login__icon">
                 <img src={Google} alt="" />
               </div>
-              <button id="google">Google</button>
+              <button id="google">
+                <a href="https://www.google.com">Google</a>
+              </button>
             </div>
           </div>
           <div className="login-content__login">

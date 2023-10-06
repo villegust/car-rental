@@ -88,3 +88,106 @@
   }
 }
 
+.hamburger-menu{
+  font-size: 2.8rem;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $text-blue;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+  }
+}
+
+
+.mobile-navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: $bg-white;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+  &__close {
+    font-size: 3rem;
+    position: absolute;
+    top: 6rem;
+    right: 3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $text-blue;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 2.3rem;
+    gap: 3rem;
+    text-align: center;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $text-black;
+        font-weight: 500;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &__buttons {
+    position: absolute;
+    display: flex;
+    gap: 2.5rem;
+    font-size: $p-size;
+    font-family: $text-font;
+    font-weight: 500;
+    align-items: center;
+    bottom: 3rem;
+
+    &__sign-in {
+      color: $text-black;
+      background-color: #fafafa;
+      padding: 1.5rem 3rem;
+      border-radius: 3px;
+      transition: all 0.3s;
+      border: 1px solid #a7a7a7;
+    }
+
+    &__register {
+      background-color: $text-blue;
+      color: white;
+      padding: 1.5rem 3rem;
+      border-radius: 3px;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #072f52;
+      }
+    }
+
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.open-nav{
+  left: 0;
+}
+
