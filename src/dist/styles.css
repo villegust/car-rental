@@ -1301,6 +1301,110 @@ footer .footer-content__2 li:nth-child(1) {
   line-height: 1.5;
 }
 
+.models {
+  align-items: center;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  padding: 10rem 0;
+  text-align: center;
+  width: 110rem;
+}
+@media (max-width: 1150px) {
+  .models {
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+  }
+}
+@media (max-width: 780px) {
+  .models {
+    grid-template-columns: 1fr;
+    width: fit-content;
+  }
+}
+.models__box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d5d5d5;
+  border-radius: 0.3rem;
+  width: 35rem;
+}
+.models__box__img {
+  width: 100%;
+  height: auto;
+}
+.models__box__img img {
+  width: 100%;
+  height: 27rem;
+}
+.models__box__desc {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+}
+.models__box__desc__name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.models__box__desc__name-price__name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+.models__box__desc__name-price__name p {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.models__box__desc__name-price__price {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.models__box__desc__name-price__price h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.models__box__desc__name-price__price p {
+  font-size: 1.6rem;
+}
+.models__box__desc__name-price__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 2rem 0 2rem 0;
+  border-bottom: 1px solid #777;
+}
+.models__box__desc__name-price__details span {
+  font-size: 1.6rem;
+  color: #777;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.models__box__desc__name-price__details__alignment {
+  text-align: right;
+}
+.models__box__desc__name-price__details__btn {
+  padding: 3rem;
+  text-align: center;
+}
+.models__box__desc__name-price__details__btn button {
+  width: 100%;
+  background-color: #035388;
+  color: white;
+  padding: 2rem;
+  font-size: 2.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.models__box__desc__name-price__details__btn button:hover {
+  background-color: #024775;
+  cursor: pointer;
+}
+
 .banner {
   background-image: url("../images/Banner/banner.jpg");
   background-position: 50%;
@@ -1350,7 +1454,7 @@ footer .footer-content__2 li:nth-child(1) {
   width: 100%;
   height: 20rem;
   background-image: url("../images/Divider/divider.png");
-  margin-top: 3rem;
+  margin: 3rem 0 3rem 0;
 }
 
 .divider-overlay {

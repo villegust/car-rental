@@ -1,7 +1,6 @@
 import React from "react";
 
 import ProfilePic from "../../images/Team/team-img.png";
-import Divider from "../Divider/Divider";
 
 function Team() {
   return (
@@ -69,7 +68,6 @@ function Team() {
           </div>
         </div>
       </div>
-      <Divider />
     </section>
   );
 }

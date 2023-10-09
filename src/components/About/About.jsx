@@ -1,8 +1,6 @@
 import React from "react";
 
 import AboutImg from "../../images/About/About.jpg";
-import Divider from "../Divider/Divider";
-import Plan from "../Plan";
 
 function About() {
   return (
@@ -22,9 +20,7 @@ function About() {
             </p>
           </div>
         </div>
-        <Plan />
       </div>
-      <Divider />
     </section>
   );
 }

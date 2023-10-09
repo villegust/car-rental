@@ -1,0 +1,122 @@
+@use "../global" as *;
+
+.models{
+    align-items: center;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    padding: 10rem 0;
+    text-align: center;
+    width: 110rem;
+
+    @media (max-width: 1150px) {
+        grid-template-columns: 1fr 1fr;
+        width: fit-content;
+
+    }
+
+    @media (max-width: 780px) {
+        grid-template-columns: 1fr;
+        width: fit-content;
+
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #d5d5d5;
+        border-radius: .3rem;
+        width: 35rem;
+    
+        &__img{
+            width: 100%;
+            height: auto;
+
+            img{
+                width: 100%;
+                height: 27rem;
+            }
+        }
+
+        &__desc{
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 3rem;
+
+            &__name-price{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &__name{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                    text-align: left;
+
+                    p{
+                        font-size: 2.4rem;
+                        font-weight: 700;
+                    }
+                }
+
+                &__price{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+
+                    h4{
+                        font-size: 2.4rem;
+                        font-weight: 700;
+                    }
+
+                    p{
+                        font-size: 1.6rem;
+                    }
+                }
+
+                &__details{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto;
+                    margin: 2rem 0 2rem 0;
+                    border-bottom: 1px solid #777;
+
+                    span{
+                        font-size: 1.6rem;
+                        color: #777;
+                        font-weight: 600;
+                        margin-bottom: 2rem;
+                    }
+
+                    &__alignment{
+                        text-align: right;
+                    }
+
+                    &__btn{
+                        padding: 3rem;
+                        text-align: center;
+                        
+                        button{
+                            width: 100%;
+                            background-color: $text-blue;
+                            color: white;
+                            padding: 2rem;
+                            font-size: 2.4rem;
+                            border-radius: 6px;
+                            text-decoration: none;
+                    
+                            &:hover {
+                                background-color: #024775;
+                                cursor: pointer;
+                            }
+                        }
+                          
+                    }
+                }
+            }
+        }
+    }
+}
