@@ -1,0 +1,60 @@
+@use "../global" as *;
+
+.team-container{
+    justify-items: center;
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    padding: 10rem 2rem;
+    text-align: center;
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    @media (max-width: 810px) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    &__team-box{
+        background-color: #fff;
+        box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.171);
+        border-radius: 10px;
+        width: 33rem;
+
+        @media (max-width: 420px) {
+            width: 25rem;
+        }
+        
+        &__img-div{
+            background-color: #f6f6f6;
+            height: auto;
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+
+            img {
+                width: 100%;
+              }
+        }
+
+        &__desc{
+            color: #010103;
+            padding: 3rem;
+
+            h2{
+                font-size: 2.2rem;
+            }
+
+            p{
+                color: #777;
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+        }
+    }
+}

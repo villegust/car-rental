@@ -1,0 +1,55 @@
+@use "../global" as *;
+
+
+.about-main{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 10rem auto;
+    max-width: 90rem;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img{
+        width: 43rem;
+        height: 43rem;
+        
+        @media (max-width: 600px) {
+            width: 30rem;
+            height: auto;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        color: #010103;
+
+        @media (max-width: 800px) {
+            align-items: center;
+            min-width: 50%;
+        }
+
+        h3{
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        h2{
+            font-size: 4.2rem;
+            line-height: 1.2;
+        }
+        
+        p{
+            font-size: 1.6rem;
+            color: #706f7b;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+    }
+}
