@@ -25,6 +25,10 @@
     max-width: 50rem;
     margin-top: 5rem;
 
+    @media (max-width: 1000px) {
+      width: 40rem;
+    }
+
     @media (max-width: 800px) {
       text-align: center;
       align-items: center;
@@ -108,9 +112,13 @@
   &__car-img {
     z-index: 2;
     position: absolute;
-    right: -5%;
     width: 70%;
+    right: 0;
     margin-top: 5rem;
+
+    @media (max-width: 1330px) {
+      width: 50%;
+    }
 
     @media (max-width: 800px) {
       display: none;

@@ -10,6 +10,8 @@ import Footer from "../components/Footer";
 import Plan from "../components/Plan";
 import CarPicker from "../components/CarPicker";
 
+import ScrollToTop from "../components/ToTop/Top";
+
 function Home() {
   const [carType, setCarType] = useState("");
   console.log(carType);
@@ -22,6 +24,7 @@ function Home() {
       <CarPicker carData={CAR_DATA} setCarType={setCarType} />
       <Plan />
       <BookCar carType={carType} setCarType={setCarType} />
+      <ScrollToTop />
       <Footer />
     </>
   );
