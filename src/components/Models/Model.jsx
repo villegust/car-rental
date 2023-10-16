@@ -39,7 +39,7 @@ function Model({ carData }) {
                           </span>
                         </div>
                         <div className="models__box__desc__name-price__price">
-                          <h4>{data[i].price}</h4>
+                          <h4>{data[i].price} kr</h4>
                           <p>per day</p>
                         </div>
                       </div>

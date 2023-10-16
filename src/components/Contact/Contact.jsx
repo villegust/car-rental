@@ -5,6 +5,7 @@ import {
   faEnvelope,
   faPhoneVolume,
   faEnvelopeOpen,
+  faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
@@ -25,6 +26,9 @@ function Contact() {
       setHaveSubmited(!haveSubmited);
       errorMsg.style.display = "none";
       doneMsg.style.display = "flex";
+      setFullName("");
+      setEmail("");
+      setQuestion("");
     }
   };
 
@@ -41,10 +45,16 @@ function Contact() {
               suscipit totam?
             </p>
             <a href="tel:123456789">
-              <FontAwesomeIcon icon={faPhoneVolume} /> (123)-456-789
+              <FontAwesomeIcon icon={faPhoneVolume} size="lg" /> (123)-456-789
             </a>
+
             <a href="mailto:carrental@gmail.com">
-              <FontAwesomeIcon icon={faEnvelope} /> carrental@gmail.com
+              <FontAwesomeIcon icon={faEnvelope} size="lg" />{" "}
+              carrental@gmail.com
+            </a>
+
+            <a href="https://www.google.se/maps/place/Uppsala/@59.83334,17.5760476,12z/data=!3m1!4b1!4m6!3m5!1s0x465fcbfb8532ab8d:0xaa4fe90a85820807!8m2!3d59.8585638!4d17.6389267!16zL20vMDd0Y3M?entry=ttu">
+              <FontAwesomeIcon icon={faLocationDot} size="lg" /> Uppsala, Sweden
             </a>
           </div>
 

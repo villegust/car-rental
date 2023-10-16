@@ -1383,7 +1383,7 @@ footer .footer-content__2 li:nth-child(1) {
   text-align: left;
 }
 .models__box__desc__name-price__name p {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   font-weight: 700;
 }
 .models__box__desc__name-price__price {
@@ -1392,7 +1392,7 @@ footer .footer-content__2 li:nth-child(1) {
   text-align: right;
 }
 .models__box__desc__name-price__price h4 {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   font-weight: 700;
 }
 .models__box__desc__name-price__price p {
@@ -1449,7 +1449,7 @@ footer .footer-content__2 li:nth-child(1) {
   display: flex;
   flex-direction: column;
   width: 41rem;
-  margin-bottom: 1rem;
+  gap: 2rem;
 }
 @media (max-width: 950px) {
   .contact-content__text {
@@ -1460,13 +1460,12 @@ footer .footer-content__2 li:nth-child(1) {
 .contact-content__text h2 {
   font-size: 3.8rem;
   line-height: 1.3;
-  margin-bottom: 2rem;
 }
 .contact-content__text p {
   color: #706f7b;
   font-size: 1.6rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .contact-content__text a {
   color: black;
@@ -1474,7 +1473,6 @@ footer .footer-content__2 li:nth-child(1) {
   font-weight: 600;
   line-height: 1.6;
   text-decoration: none;
-  margin-bottom: 1rem;
 }
 .contact-content__form {
   display: flex;
