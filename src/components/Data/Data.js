@@ -130,3 +130,26 @@ export const CAR_DATA = [
         },
     ],
 ];
+
+export const FAQ_DATA = [
+    {
+      question: "Question 1",
+      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis adipisci mollitia, repudiandae porro assumenda, magnam delectus repellat facere sapiente aut blanditiis nam reiciendis architecto. Laborum officia iure alias voluptas libero.",
+    },
+    {
+      question: "Question 2",
+      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis adipisci mollitia, repudiandae porro assumenda, magnam delectus repellat facere sapiente aut blanditiis nam reiciendis architecto. Laborum officia iure alias voluptas libero.",
+    },
+    {
+      question: "Question 3",
+      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis adipisci mollitia, repudiandae porro assumenda, magnam delectus repellat facere sapiente aut blanditiis nam reiciendis architecto. Laborum officia iure alias voluptas libero.",
+    },
+    {
+      question: "Question 4",
+      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis adipisci mollitia, repudiandae porro assumenda, magnam delectus repellat facere sapiente aut blanditiis nam reiciendis architecto. Laborum officia iure alias voluptas libero.",
+    },
+    {
+      question: "Question 5",
+      answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis adipisci mollitia, repudiandae porro assumenda, magnam delectus repellat facere sapiente aut blanditiis nam reiciendis architecto. Laborum officia iure alias voluptas libero.",
+    },
+  ];

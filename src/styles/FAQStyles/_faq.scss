@@ -1,0 +1,77 @@
+@use "../global" as *;
+
+.faq-section{
+    margin: 10rem 0 20rem 0;
+}
+
+.faq-content{
+    display: flex;
+    flex-direction: column;
+
+    &__title{
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 80rem;
+        text-align: center;
+
+        h4{
+            font-size: 2rem;
+        }
+
+        h2{
+            font-size: 3.2rem;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            color: #706f7b;
+            font-size: 1.6rem;
+        }
+    }
+
+}
+
+.all-questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.faq-box{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,.1);
+    width: 80rem;
+    cursor: pointer;
+
+    &__questions{
+        align-items: center;
+        box-shadow: 0 3px 6px 0 rgba(0,0,0,.1);
+        display: flex;
+        justify-content: space-between;
+        padding: 1.8rem 4.5rem;
+        transition: .15s ease;
+
+        &__active-question{
+            background-color: $text-blue;
+            color: #fff;
+        }
+
+
+        p{
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+    }
+    
+    &__answer{
+        padding: 2.4rem;
+        color: #706f7b;
+        font-family: Rubik,sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+}

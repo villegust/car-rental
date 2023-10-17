@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CAR_DATA } from "../components/Data/carData";
+import { CAR_DATA } from "../components/Data/Data";
 
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner/Banner";
