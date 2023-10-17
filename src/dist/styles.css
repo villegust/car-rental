@@ -1647,6 +1647,7 @@ footer .footer-content__2 li:nth-child(1) {
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
   width: 80rem;
   cursor: pointer;
+  user-select: none;
 }
 .faq-box__questions {
   align-items: center;
