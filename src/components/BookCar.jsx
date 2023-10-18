@@ -12,7 +12,7 @@ import astonmartinCar from "../images/Cars/aston-martin.jpg";
 import lamborginiUrus from "../images/Cars/lamborghini-urus.jpg";
 import polestar from "../images/Cars/polestar-2.jpg";
 
-function BookCar({ carType, setCarType }) {
+function BookCar({ carData, locationData, carType, setCarType }) {
   const [modal, setModal] = useState(false);
 
   //   booking useStates
@@ -33,7 +33,6 @@ function BookCar({ carType, setCarType }) {
   const handleCar = (e) => {
     setCarType(e.target.value);
     setCarImage(e.target.value);
-    console.log("Handle car runs");
   };
   useEffect(() => {
     setCarImage(carType);
@@ -127,20 +126,14 @@ function BookCar({ carType, setCarType }) {
                   </label>
                   <select value={carType} onChange={handleCar}>
                     <option value="">Select your car</option>
-                    <option value="Audi RS6 Avant">Audi RS6 Avant</option>
-                    <option value="BMW M4 Compentition">
-                      BMW M4 Compentition
-                    </option>
-                    <option value="Mercedes Benz G63 Wagon">
-                      Mercedes Benz G63 Wagon
-                    </option>
-                    <option value="Porsche 911 GT3 RS">
-                      Porsche 911 GT3 RS
-                    </option>
-                    <option value="Aston Martin DB5">Aston Martin DB5</option>
-                    <option value="Lamborghini Urus">Lamborgini Urus</option>
-                    <option value="Koenigsegg Jesko">Koenigsegg Jesko</option>
-                    <option value="Polestar 2">Polestar 2</option>
+
+                    {carData.map((data, index) => {
+                      return (
+                        <option key={index} value={data[0].fullName}>
+                          {data[0].fullName}
+                        </option>
+                      );
+                    })}
                   </select>
                 </div>
                 <div className="form-box__car-type">
@@ -152,11 +145,13 @@ function BookCar({ carType, setCarType }) {
                     onChange={(e) => setPickUp(e.target.value)}
                   >
                     <option value="">Select your pickup location</option>
-                    <option value="Stockholm">Stockholm</option>
-                    <option value="Uppsala">Uppsala</option>
-                    <option value="Malmö">Malmö</option>
-                    <option value="Linköping">Linköping</option>
-                    <option value="Göteborg ">Göteborg </option>
+                    {locationData.map((data, index) => {
+                      return (
+                        <option key={index} value={data.location}>
+                          {data.location}
+                        </option>
+                      );
+                    })}
                   </select>
                 </div>
                 <div className="form-box__car-type">
@@ -168,11 +163,13 @@ function BookCar({ carType, setCarType }) {
                     onChange={(e) => setDropOff(e.target.value)}
                   >
                     <option value="">Select your drop off location</option>
-                    <option value="Stockholm">Stockholm</option>
-                    <option value="Uppsala">Uppsala</option>
-                    <option value="Malmö">Malmö</option>
-                    <option value="Linköping">Linköping</option>
-                    <option value="Göteborg ">Göteborg </option>
+                    {locationData.map((data, index) => {
+                      return (
+                        <option key={index} value={data.location}>
+                          {data.location}
+                        </option>
+                      );
+                    })}
                   </select>
                 </div>
                 <div className="form-box__car-date">

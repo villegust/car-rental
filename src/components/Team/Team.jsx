@@ -23,7 +23,7 @@ function Team() {
             </div>
             <div className="team-container__team-box__desc">
               <h2>Olivia Johnson</h2>
-              <p>Seller</p>
+              <p>Business Manager</p>
             </div>
           </div>
 

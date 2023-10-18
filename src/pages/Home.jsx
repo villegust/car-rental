@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 
 import { CAR_DATA } from "../components/Data/Data";
 import { FAQ_DATA } from "../components/Data/Data";
+import { LOCATION_DATA } from "../components/Data/Data";
 
 import Landpage from "../components/Landpage";
 import BookCar from "../components/BookCar";
@@ -17,7 +18,6 @@ import ScrollToTop from "../components/ToTop/Top";
 
 function Home() {
   const [carType, setCarType] = useState("");
-  console.log(carType);
 
   return (
     <>
@@ -26,7 +26,12 @@ function Home() {
       <Landpage />
       <CarPicker carData={CAR_DATA} setCarType={setCarType} />
       <Plan />
-      <BookCar carType={carType} setCarType={setCarType} />
+      <BookCar
+        carData={CAR_DATA}
+        locationData={LOCATION_DATA}
+        carType={carType}
+        setCarType={setCarType}
+      />
       <FAQ data={FAQ_DATA} />
       <Download />
       <Footer />

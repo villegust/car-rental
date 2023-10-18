@@ -21,6 +21,8 @@ import Polestar2 from "../../images/Car-model/ps-2-box.jpg"
 export const CAR_DATA = [
     [
         {
+            id: 1,
+            fullName: "Audi RS6 Avant",
             name: "Audi RS6",
             price: "1000",
             img: carAudi,
@@ -37,6 +39,8 @@ export const CAR_DATA = [
     ],
     [
         {
+            id: 2,
+            fullName: "BMW M4 Compentition",
             name: "BMW M4 ",
             price: "1200",
             img: carBmw,
@@ -53,6 +57,8 @@ export const CAR_DATA = [
     ],
     [
         {
+            id: 3,
+            fullName: "Mercedes Benz G63 Wagon",
             name: "Mercedes G63 ",
             price: "1400",
             img: mercedesCar,
@@ -69,6 +75,8 @@ export const CAR_DATA = [
     ],
     [
         {
+            id: 4,
+            fullName: "Porsche 911 GT3 RS",
             name: "Porsche 911 ",
             price: "1000",
             img: porscheCar,
@@ -85,6 +93,8 @@ export const CAR_DATA = [
     ],
     [
         {
+            id: 5,
+            fullName: "Aston Martin DB5",
             name: "Aston Martin DB5",
             price: "1800",
             img: astonmartinCar,
@@ -101,6 +111,8 @@ export const CAR_DATA = [
     ],
     [
         {
+            id: 6,
+            fullName: "Lamborghini Urus",
             name: "Lamborghini Urus",
             price: "2000",
             img: lamborginiUrus,
@@ -117,6 +129,8 @@ export const CAR_DATA = [
     ],
     [
         {
+            id: 7,
+            fullName: "Koenigsegg Jesko",
             name: "Koenigsegg Jesko",
             price: "2500",
             img: koenigseggCar,
@@ -133,13 +147,15 @@ export const CAR_DATA = [
     ],
     [
         {
+            id: 8,
+            fullName: "Polestar 2",
             name: "Polestar 2",
             price: "1900",
             img: polestar2,
             modelImg: Polestar2,
-            model: "Polestar",
-            mark: "2",
-            year: "2022",
+            model: "2",
+            mark: "Polestar",
+            year: "2020",
             doors: "4",
             ac: "Yes",
             transmission: "Automatic",
@@ -171,3 +187,27 @@ export const FAQ_DATA = [
       answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis adipisci mollitia, repudiandae porro assumenda, magnam delectus repellat facere sapiente aut blanditiis nam reiciendis architecto. Laborum officia iure alias voluptas libero.",
     },
   ];
+
+
+export const LOCATION_DATA = [
+    {
+        location: "Stockholm",
+
+    },
+    {
+        location: "Uppsala",
+
+    },
+    {
+        location: "Malmö",
+
+    },
+    {
+        location: "Linköping",
+
+    },
+    {
+        location: "Göteborg",
+
+    },
+]
