@@ -10,6 +10,7 @@ import porscheCar from "../images/Cars/Porsche_911_GT3_RS.jpg";
 import koenigseggCar from "../images/Cars/Koenigsegg-Jesko.jpg";
 import astonmartinCar from "../images/Cars/aston-martin.jpg";
 import lamborginiUrus from "../images/Cars/lamborghini-urus.jpg";
+import polestar from "../images/Cars/polestar-2.jpg";
 
 function BookCar({ carType, setCarType }) {
   const [modal, setModal] = useState(false);
@@ -93,6 +94,10 @@ function BookCar({ carType, setCarType }) {
       imgUrl = koenigseggCar;
       break;
 
+    case "Polestar 2":
+      imgUrl = polestar;
+      break;
+
     default:
       imgUrl = "";
   }
@@ -109,7 +114,7 @@ function BookCar({ carType, setCarType }) {
           <div className="booking-content">
             <div className="booking-content__box">
               <p className="error-message">All fields required!</p>
-              <p className="reservation-done">
+              <p className="reservation-done" id="done">
                 {" "}
                 Your reservation has been submited. Check your email to confirm
                 the order.
@@ -135,6 +140,7 @@ function BookCar({ carType, setCarType }) {
                     <option value="Aston Martin DB5">Aston Martin DB5</option>
                     <option value="Lamborghini Urus">Lamborgini Urus</option>
                     <option value="Koenigsegg Jesko">Koenigsegg Jesko</option>
+                    <option value="Polestar 2">Polestar 2</option>
                   </select>
                 </div>
                 <div className="form-box__car-type">

@@ -43,9 +43,14 @@
     flex-direction: column;
     background-color: #fff;
     box-shadow: 0 10px 15px 0 rgba(0,0,0,.1);
-    width: 80rem;
+    width: 60%;
     cursor: pointer;
     user-select: none;
+
+    @media (max-width: 550px) {
+        width: 100%;
+    }
+
 
     &__questions{
         align-items: center;
@@ -54,6 +59,10 @@
         justify-content: space-between;
         padding: 1.8rem 4.5rem;
         transition: .15s ease;
+
+        @media (max-width: 600px) {
+            padding: 1.8rem 2.5rem;
+        }
 
         &__active-question{
             background-color: $text-blue;

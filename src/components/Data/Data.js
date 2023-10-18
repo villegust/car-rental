@@ -6,6 +6,7 @@ import porscheCar from "../../images/Cars/Porsche_911_GT3_RS.jpg";
 import koenigseggCar from "../../images/Cars/Koenigsegg-Jesko.jpg";
 import astonmartinCar from "../../images/Cars/aston-martin.jpg";
 import lamborginiUrus from "../../images/Cars/lamborghini-urus.jpg";
+import polestar2 from "../../images/Cars/polestar-2.jpg"
 
 //for the model page
 import Audi from "../../images/Car-model/audi-rs6-box.jpg";
@@ -15,6 +16,7 @@ import Porsche from "../../images/Car-model/porsche-911-box.jpg";
 import Koenigsegg from "../../images/Car-model/koenigsegg-jesko-box.jpg";
 import Astonmartin from "../../images/Car-model/am-db5-box.jpg";
 import LamborginiUrus from "../../images/Car-model/lamborghini-urus-box.jpg";
+import Polestar2 from "../../images/Car-model/ps-2-box.jpg"
 
 export const CAR_DATA = [
     [
@@ -126,6 +128,22 @@ export const CAR_DATA = [
             ac: "Yes",
             transmission: "Automatic",
             fuel: "Gasoline",
+
+        },
+    ],
+    [
+        {
+            name: "Polestar 2",
+            price: "1900",
+            img: polestar2,
+            modelImg: Polestar2,
+            model: "Polestar",
+            mark: "2",
+            year: "2022",
+            doors: "4",
+            ac: "Yes",
+            transmission: "Automatic",
+            fuel: "Electric",
 
         },
     ],

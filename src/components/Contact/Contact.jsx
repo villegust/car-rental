@@ -22,6 +22,7 @@ function Contact() {
 
     if (fullName === "" || email === "" || question === "") {
       errorMsg.style.display = "flex";
+      doneMsg.style.display = "none";
     } else {
       setHaveSubmited(!haveSubmited);
       errorMsg.style.display = "none";
@@ -80,7 +81,7 @@ function Contact() {
                 Email <b>*</b>
               </label>
               <input
-                type="text"
+                type="email"
                 placeholder="youremail@example.com"
                 value={email}
                 onChange={(e) => {
@@ -101,11 +102,11 @@ function Contact() {
                   setQuestion(e.target.value);
                 }}
               />
+              <button onClick={handleSubmit}>
+                {" "}
+                <FontAwesomeIcon icon={faEnvelopeOpen} /> Send Now
+              </button>
             </form>
-            <button onClick={handleSubmit}>
-              {" "}
-              <FontAwesomeIcon icon={faEnvelopeOpen} /> Send Now
-            </button>
           </div>
         </div>
       </div>

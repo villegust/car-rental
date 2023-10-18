@@ -85,6 +85,15 @@ function CarPicker({ carData, setCarType }) {
                 >
                   Koenigsegg Jesko
                 </button>
+                <button
+                  value={"Polestar 2"}
+                  onClick={(e) => {
+                    setActive(8);
+                    setSelectedCar(e.target.value);
+                  }}
+                >
+                  Polestar 2
+                </button>
               </div>
               {active === 1 && (
                 <Carbox
@@ -138,6 +147,14 @@ function CarPicker({ carData, setCarType }) {
                 <Carbox
                   data={carData}
                   carID={6}
+                  setCarType={setCarType}
+                  selectedCar={selectedCar}
+                />
+              )}
+              {active === 8 && (
+                <Carbox
+                  data={carData}
+                  carID={7}
                   setCarType={setCarType}
                   selectedCar={selectedCar}
                 />
