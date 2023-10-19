@@ -14,6 +14,8 @@
 
     &__box{
         background-color: $bg-white;
+        background-image: url("/src/images/BookCar/bg.svg");
+        background-position: center;
         width: 100%;
         padding: 4rem 4.5rem 5rem 5.5rem;
         box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
@@ -23,8 +25,7 @@
         color: white;
         border-radius: 5px;
         background-size: cover;
-        display: flex;
-        flex-direction: column;
+        @include FlexCol;
         color: $text-black;
 
     }
@@ -59,8 +60,12 @@
 
             label{
                 font-size: $p-size;
-                font-weight: 400;
+                font-weight: 600;
                 margin-bottom: 1.2rem;
+
+                span{
+                    margin-right: 1rem;
+                }
             }
 
             select{
@@ -100,6 +105,10 @@
                 font-weight: 600;
                 margin-bottom: 1.2rem;
                 margin-top: 2.9rem;
+
+                span{
+                    margin-right: 1rem;
+                }
             }
         }
 
@@ -114,9 +123,10 @@
             color: white;
             background-color: $text-blue;
             cursor: pointer;
+            transition: all 0.3s;
 
             &:hover{
-                background-color: #0472bb;
+                background-color: $text-blue-hover;
             }
         }
       }
@@ -227,8 +237,7 @@
           }
 
         &__carInfo{
-            display: flex;
-            flex-direction: column;
+            @include FlexCol;
             gap: 2rem;
 
             h5{
@@ -248,8 +257,7 @@
         }
 
         &__model{
-            display: flex;
-            flex-direction: column;
+            @include FlexCol;
             gap: 2rem;
 
             h5{
@@ -266,8 +274,7 @@
     }
     &__personalInfo{
         padding: 3rem 3rem;
-        display: flex;
-        flex-direction: column;
+        @include FlexCol;
 
         h4{
             font-size: 1.8rem;
@@ -278,8 +285,7 @@
     }
     
     .form{
-        display: flex;
-        flex-direction: column;
+        @include FlexCol;
 
         &__1cols{
             display: grid;
@@ -305,8 +311,7 @@
         }
 
         span {
-            display: flex;
-            flex-direction: column;
+            @include FlexCol;
             gap: 0.4rem;
         }
 
@@ -337,9 +342,11 @@
         padding: 2rem;
         font-size: 2.4rem;
         border-radius: 6px;
+        transition: all 0.3s;
+
 
         &:hover {
-            background-color: #024775;
+            background-color: $text-blue-hover;
             cursor: pointer;
         }
     }

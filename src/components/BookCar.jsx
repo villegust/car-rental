@@ -2,6 +2,12 @@ import React from "react";
 
 import BookingModal from "./Modal/BookingModal";
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCarSide,
+  faLocationDot,
+  faCalendarDays,
+} from "@fortawesome/free-solid-svg-icons";
 
 import carAudi from "../images/Cars/audi-rs6.jpg";
 import carBmw from "../images/Cars/bmw-m4-compentition.jpg";
@@ -122,6 +128,9 @@ function BookCar({ carData, locationData, carType, setCarType }) {
               <form className="form-box">
                 <div className="form-box__car-type">
                   <label className="input-icon">
+                    <span>
+                      <FontAwesomeIcon icon={faCarSide} />
+                    </span>
                     Select your car type <b>*</b>
                   </label>
                   <select value={carType} onChange={handleCar}>
@@ -138,6 +147,9 @@ function BookCar({ carData, locationData, carType, setCarType }) {
                 </div>
                 <div className="form-box__car-type">
                   <label className="input-icon">
+                    <span>
+                      <FontAwesomeIcon icon={faLocationDot} />
+                    </span>
                     Pick up <b>*</b>
                   </label>
                   <select
@@ -156,6 +168,9 @@ function BookCar({ carData, locationData, carType, setCarType }) {
                 </div>
                 <div className="form-box__car-type">
                   <label className="input-icon">
+                    <span>
+                      <FontAwesomeIcon icon={faLocationDot} />
+                    </span>
                     Drop off <b>*</b>
                   </label>
                   <select
@@ -174,6 +189,9 @@ function BookCar({ carData, locationData, carType, setCarType }) {
                 </div>
                 <div className="form-box__car-date">
                   <label htmlFor="datepicker">
+                    <span>
+                      <FontAwesomeIcon icon={faCalendarDays} />
+                    </span>
                     Pick upp time <b>*</b>
                   </label>
                   <input
@@ -185,6 +203,9 @@ function BookCar({ carData, locationData, carType, setCarType }) {
                 </div>
                 <div className="form-box__car-date">
                   <label htmlFor="datepicker">
+                    <span>
+                      <FontAwesomeIcon icon={faCalendarDays} />
+                    </span>
                     Drop off time <b>*</b>
                   </label>
                   <input

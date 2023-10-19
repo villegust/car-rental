@@ -6,8 +6,7 @@
 }
 
 .plan-container{
-    display: flex;
-    flex-direction: column;
+    @include FlexCol;
 
     &__title{
         color: #010103;

@@ -14,8 +14,7 @@
       }
 
     &__text{
-        display: flex;
-        flex-direction: column;
+        @include FlexCol;
         width: 41rem;
         gap: 2rem;
 
@@ -46,12 +45,10 @@
     }
 
     &__form{
-        display: flex;
-        flex-direction: column;
+        @include FlexCol;
 
         form {
-            display: flex;
-            flex-direction: column;
+            @include FlexCol;
 
             label {
                 font-size: 1.8rem;
@@ -92,9 +89,10 @@
             font-weight: 600;
             font-size: 1.8rem;
             border-radius: 6px;
+            transition: all 0.3s;
     
             &:hover {
-                background-color: #024775;
+                background-color: $text-blue-hover;
                 cursor: pointer;
             }
         }

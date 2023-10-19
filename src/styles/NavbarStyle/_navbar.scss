@@ -80,7 +80,7 @@
       transition: all 0.3s;
 
       &:hover {
-        background-color: #072f52;
+        background-color: $text-blue-hover;
       }
     }
 
@@ -107,8 +107,7 @@
 
 
 .mobile-navbar {
-  display: flex;
-  flex-direction: column;
+  @include FlexCol;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -134,8 +133,7 @@
   }
 
   &__links {
-    display: flex;
-    flex-direction: column;
+    @include FlexCol;
     list-style: none;
     font-size: 2.3rem;
     gap: 3rem;

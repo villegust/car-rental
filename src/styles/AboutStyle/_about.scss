@@ -24,8 +24,7 @@
     }
 
     &__text {
-        display: flex;
-        flex-direction: column;
+        @include FlexCol;
         color: #010103;
 
         @media (max-width: 800px) {

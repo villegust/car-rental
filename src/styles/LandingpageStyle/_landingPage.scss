@@ -16,8 +16,7 @@
   }
 
   &__text {
-    display: flex;
-    flex-direction: column;
+    @include FlexCol;
     z-index: 3;
     max-width: 50rem;
     margin-top: 5rem;
@@ -103,8 +102,7 @@
 
 
         &:hover {
-          box-shadow: 0 10px 15px 0 #1f73aa;
-          background-color: #0472bb;
+          background-color: $text-blue-hover;
         }
       }
 

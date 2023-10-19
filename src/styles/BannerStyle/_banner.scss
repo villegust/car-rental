@@ -20,8 +20,7 @@
 
     &__text{
         color: #010103;
-        display: flex;
-        flex-direction: column;
+        @include FlexCol;
         height: 40rem;
         justify-content: center;
         position: relative;

@@ -16,8 +16,7 @@
 }
 
 .download-text{
-    display: flex;
-    flex-direction: column;
+    @include FlexCol;
     max-width: 50rem;
     text-align: left;
     gap: 3rem;

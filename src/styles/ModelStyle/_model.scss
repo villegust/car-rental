@@ -6,8 +6,7 @@
 }
 
 .model-container{
-    display: flex;
-    flex-direction: column;
+    @include FlexCol;
 
     &__title{
         text-align: center;
@@ -36,8 +35,7 @@
         }
 
         .car-picker{
-            display: flex;
-            flex-direction: column;
+            @include FlexCol;
             gap: 1rem;
 
             button{
@@ -150,9 +148,11 @@
                     color: #fff;
                     padding: 1rem 4rem;
                     font-size: 2rem;
+                    transition: all 0.3s;
+
 
                     &:hover{
-                        background-color: #034068;
+                        background-color: $text-blue-hover;
                     }
                 }
             }

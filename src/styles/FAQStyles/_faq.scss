@@ -1,12 +1,15 @@
 @use "../global" as *;
 
 .faq-section{
+    background-image: url("/src/images/Faq/faq-bg.png");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
     margin: 10rem 0 20rem 0;
 }
 
 .faq-content{
-    display: flex;
-    flex-direction: column;
+    @include FlexCol;
 
     &__title{
         line-height: 1.5;
@@ -25,22 +28,20 @@
 
         p{
             color: #706f7b;
-            font-size: 1.6rem;
+            font-size: $p-size;
         }
     }
 
 }
 
 .all-questions{
-    display: flex;
-    flex-direction: column;
+    @include FlexCol;
     align-items: center;
     margin-top: 7rem;
 }
 
 .faq-box{
-    display: flex;
-    flex-direction: column;
+    @include FlexCol;
     background-color: #fff;
     box-shadow: 0 10px 15px 0 rgba(0,0,0,.1);
     width: 60%;

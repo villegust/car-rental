@@ -46,9 +46,6 @@
             border-radius: .75rem;
             border: none;
 
-            @media screen and (max-width: 500px){
-                
-            }
     
             &#facebook{
                 background-color: #4267B2;
@@ -82,8 +79,7 @@
 
 
     &__login{
-        display: flex;
-        flex-direction: column;
+        @include FlexCol;
         margin-top: 20px;
 
         input{
@@ -138,8 +134,7 @@
                 text-decoration: none;
 
                 &:hover{
-                    background-color: #3f3f3fd0;
-                    box-shadow: -3px 20px 32px -11px rgba(0,0,0,0.81);
+                    background-color: #000000d0;
                 }
             }
         }
