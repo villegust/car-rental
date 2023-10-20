@@ -28,7 +28,7 @@ const CarPicker = ({ carData, setCarType }) => {
         <div className="container">
           <div className="model-container">
             <div className="model-container__title">
-              <h2>Our Vehicle Model</h2>
+              <h2>Our Vehicle Models</h2>
               <p>
                 Choose from a large pick off luxury cars to take for your next
                 trip.
