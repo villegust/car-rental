@@ -38,19 +38,18 @@ const CarPicker = ({ carData, setCarType }) => {
             <div className="model-container__car-content">
               <div className="car-picker">
                 {carData.map((data, index) => {
-                  for (let i = 0; i < data.length; i++)
-                    return (
-                      <button
-                        key={index}
-                        value={data[i].fullName}
-                        onClick={(e) => {
-                          setActive(data[i].id);
-                          setSelectedCar(e.target.value);
-                        }}
-                      >
-                        {data[i].fullName}
-                      </button>
-                    );
+                  return (
+                    <button
+                      key={index}
+                      value={data[0].fullName}
+                      onClick={(e) => {
+                        setActive(data[0].id);
+                        setSelectedCar(e.target.value);
+                      }}
+                    >
+                      {data[0].fullName}
+                    </button>
+                  );
                 })}
               </div>
 
