@@ -6,7 +6,7 @@ import porscheCar from "../../images/Cars/Porsche_911_GT3_RS.jpg";
 import koenigseggCar from "../../images/Cars/Koenigsegg-Jesko.jpg";
 import astonmartinCar from "../../images/Cars/aston-martin.jpg";
 import lamborginiUrus from "../../images/Cars/lamborghini-urus.jpg";
-import polestar2 from "../../images/Cars/polestar-2.jpg"
+import polestar2 from "../../images/Cars/polestar-2.jpg";
 
 //for the model page
 import Audi from "../../images/Car-model/audi-rs6-box.jpg";
@@ -16,7 +16,13 @@ import Porsche from "../../images/Car-model/porsche-911-box.jpg";
 import Koenigsegg from "../../images/Car-model/koenigsegg-jesko-box.jpg";
 import Astonmartin from "../../images/Car-model/am-db5-box.jpg";
 import LamborginiUrus from "../../images/Car-model/lamborghini-urus-box.jpg";
-import Polestar2 from "../../images/Car-model/ps-2-box.jpg"
+import Polestar2 from "../../images/Car-model/ps-2-box.jpg";
+
+//Reviews profile pic
+import img1 from "../../images/Reviews/profile1.jpg"
+import img2 from "../../images/Reviews/profile2.jpg"
+import img3 from "../../images/Reviews/profile3.jpg"
+import img4 from "../../images/Reviews/profile4.jpg"
 
 export const CAR_DATA = [
     [
@@ -210,4 +216,41 @@ export const LOCATION_DATA = [
         location: "Göteborg",
 
     },
+]
+
+export const REVIEW_DATA = [
+    {
+        name: "Olivia Harper",
+        homeCountry: "Bolivia",
+        profileImg: img1,
+        title: "Unmatched Luxury and Service:",
+        review: "Exceptional car fleet and impeccable service. Courteous staff, expert knowledge, and the best destination for high-end car rentals."
+
+    },
+    {
+        name: "Ethan Reynolds",
+        homeCountry: "Norway",
+        profileImg: img2,
+        title: "A Symphony of Opulence and Style:",
+        review: "Extraordinary luxury cars that redefine elegance. The entire experience is a celebration of opulence. Staff's attention to detail is impressive."
+
+    },
+    {
+        name: "Caleb Mitchell",
+        homeCountry: "New Zealand",
+        profileImg: img3,
+        title: "Refined Elegance at Its Finest:",
+        review: "An unrivaled level of sophistication. A luxury experience from start to finish. From the showroom to the car, everything exudes elegance."
+
+    },
+    {
+        name: "Sophia Bennett",
+        homeCountry: "Canada",
+        profileImg: img4,
+        title: "The Epitome of Class and Style:",
+        review: "Seamless, VIP experience with exquisite amenities. They create unforgettable moments. For a touch of class and style, this is the ideal choice."
+
+    },
+
+
 ]

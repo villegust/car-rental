@@ -8,6 +8,7 @@ import About from "./pages/About"
 import Models from "./pages/Models"
 import Team from "./pages/Team"
 import Contact from "./pages/Contact"
+import Reviews from "./pages/Reviews"
 import Login from "./components/Login"
 import Register from "./components/Register"
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/models" element={<Models />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/reviews" element={<Reviews />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
       </Routes>

@@ -39,14 +39,14 @@ function Navbar() {
             </li>
             <li>
               {" "}
-              <Link className="about-link" to="/about">
-                About
+              <Link className="models-link" to="/models">
+                Vehicle Models
               </Link>
             </li>
             <li>
               {" "}
-              <Link className="models-link" to="/models">
-                Vehicle Models
+              <Link className="review-link" to="/reviews">
+                Reviews
               </Link>
             </li>
             <li>
@@ -88,14 +88,14 @@ function Navbar() {
             </li>
             <li>
               {" "}
-              <Link className="about-link" to="/about">
-                About
+              <Link className="models-link" to="/models">
+                Vehicle Models
               </Link>
             </li>
             <li>
               {" "}
-              <Link className="models-link" to="/models">
-                Vehicle Models
+              <Link className="review-link" to="/reviews">
+                Reviews
               </Link>
             </li>
             <li>
