@@ -65,7 +65,7 @@ function Contact() {
             </p>
             <p className="error-message">Please enter all the fields</p>
             <form>
-              <label htmlFor="">
+              <label htmlFor="fullName">
                 Full name <b>*</b>
               </label>
               <input
@@ -77,7 +77,7 @@ function Contact() {
                 }}
               />
 
-              <label htmlFor="">
+              <label htmlFor="email">
                 Email <b>*</b>
               </label>
               <input
@@ -89,12 +89,12 @@ function Contact() {
                 }}
               />
 
-              <label htmlFor="">
+              <label htmlFor="question">
                 Question <b>*</b>
               </label>
               <textarea
-                name=""
-                id=""
+                name="question"
+                id="question"
                 rows="5"
                 placeholder="Write question here..."
                 value={question}

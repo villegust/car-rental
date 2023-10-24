@@ -46,13 +46,12 @@
     box-shadow: 0 10px 15px 0 rgba(0,0,0,.1);
     width: 60%;
     cursor: pointer;
-    user-select: none;
-
+    
     @media (max-width: 550px) {
         width: 100%;
     }
-
-
+    
+    
     &__questions{
         align-items: center;
         box-shadow: 0 3px 6px 0 rgba(0,0,0,.1);
@@ -60,6 +59,7 @@
         justify-content: space-between;
         padding: 1.8rem 4.5rem;
         transition: .15s ease;
+        user-select: none;
 
         @media (max-width: 600px) {
             padding: 1.8rem 2.5rem;
@@ -84,5 +84,6 @@
         font-family: Rubik,sans-serif;
         font-size: 1.6rem;
         line-height: 1.7;
+        cursor: auto;
     }
 }

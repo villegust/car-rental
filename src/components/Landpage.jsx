@@ -2,8 +2,8 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import BgShape from "../images/LandingPage/landingPageImg.png";
-import HeroCar from "../images/LandingPage/landingPageImg.png";
+import BgShape from "../images/LandingPage/wave.svg";
+import HeroCar from "../images/LandingPage/test.png";
 
 import {
   faAngleRight,
@@ -27,7 +27,12 @@ function LandingPage() {
     <>
       <section id="home" className="landPage-section">
         <div className="container">
-          {/* <img className="bg-shape" src={BgShape} alt="bg-shape" /> */}
+          <img
+            src={HeroCar}
+            alt="car-img"
+            className="landPage-content__car-img"
+          />
+          <img className="bg-shape" src={BgShape} alt="bg-shape" />
           <div className="landPage-content">
             <div className="landPage-content__text">
               <h4>Plan your next trip in style!</h4>
@@ -56,11 +61,6 @@ function LandingPage() {
                 </Link>
               </div>
             </div>
-            <img
-              src={HeroCar}
-              alt="car-img"
-              className="landPage-content__car-img"
-            />
           </div>
         </div>
       </section>
