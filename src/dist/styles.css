@@ -411,11 +411,6 @@ body {
   flex-direction: column;
   color: #010103;
 }
-@media (max-width: 400px) {
-  .booking-content {
-    padding: 4rem 2.5rem 5rem 2.5rem;
-  }
-}
 .booking-content h2 {
   font-size: 2.4rem;
   font-weight: 700;
@@ -526,187 +521,6 @@ body {
   display: none;
   justify-content: space-between;
   align-items: center;
-}
-
-.active-modal {
-  opacity: 1 !important;
-  display: flex !important;
-}
-
-.modal-overlay {
-  opacity: 0;
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 9;
-  top: 0;
-  right: 0;
-}
-
-.booking-modal {
-  opacity: 0;
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  z-index: 10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 50%;
-  height: 100vh;
-  border: 2px solid white;
-  background-color: rgb(255, 255, 255);
-  color: #010103;
-}
-@media (max-width: 1100px) {
-  .booking-modal {
-    width: 80%;
-  }
-}
-@media (max-width: 800px) {
-  .booking-modal {
-    width: 100%;
-  }
-}
-@media (max-width: 800px) {
-  .booking-modal {
-    top: 50%;
-  }
-}
-.booking-modal__title {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
-  background-color: #035388;
-  color: white;
-  align-items: center;
-}
-.booking-modal__title h2 {
-  font-size: 2.4rem;
-  text-transform: uppercase;
-}
-.booking-modal__title span {
-  cursor: pointer;
-}
-.booking-modal__car-info {
-  padding: 3rem 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-bottom: 1px solid #494949;
-}
-@media (max-width: 650px) {
-  .booking-modal__car-info {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-.booking-modal__car-info__carInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.booking-modal__car-info__carInfo h5 {
-  font-size: 2rem;
-  color: #035388;
-}
-.booking-modal__car-info__carInfo h6 {
-  font-size: 1.5rem;
-  margin-bottom: 0.4rem;
-}
-.booking-modal__car-info__carInfo p {
-  font-size: 1.6rem;
-  color: #5e5e5e;
-}
-.booking-modal__car-info__model {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.booking-modal__car-info__model h5 {
-  font-size: 2rem;
-  color: #035388;
-}
-.booking-modal__car-info__model img {
-  width: 100%;
-  height: auto;
-}
-.booking-modal__personalInfo {
-  padding: 3rem 3rem;
-  display: flex;
-  flex-direction: column;
-}
-.booking-modal__personalInfo h4 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  color: #035388;
-  margin-bottom: 1.4rem;
-}
-.booking-modal .form {
-  display: flex;
-  flex-direction: column;
-}
-.booking-modal .form__1cols {
-  display: grid;
-  grid-template-columns: 1fr !important;
-}
-.booking-modal .form__1cols, .booking-modal .form__2cols {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding: 1rem 0;
-}
-@media (max-width: 420px) {
-  .booking-modal .form__1cols, .booking-modal .form__2cols {
-    grid-template-columns: 1fr;
-  }
-}
-.booking-modal .form p {
-  font-size: 1.1rem;
-}
-.booking-modal .form span {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-.booking-modal .form label {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #777;
-}
-.booking-modal .form input {
-  padding: 14px 15px;
-  background-color: #dbdbdb;
-  color: #555;
-  font-size: 1.3rem;
-  outline: none;
-  border: none;
-}
-
-.reserve-button {
-  padding: 3rem;
-  text-align: center;
-}
-.reserve-button button {
-  background-color: #035388;
-  color: white;
-  padding: 2rem;
-  font-size: 2.4rem;
-  border-radius: 6px;
-  transition: all 0.3s;
-}
-.reserve-button button:hover {
-  background-color: #003f69;
-  cursor: pointer;
-}
-
-.carInfo-div {
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
 }
 
 .plan-section {
@@ -1379,7 +1193,6 @@ footer .footer-content__2 li:nth-child(1) {
   flex-direction: column;
   border: 1px solid #d5d5d5;
   border-radius: 0.3rem;
-  width: 35rem;
 }
 .models__box__img {
   width: 100%;
@@ -1619,6 +1432,187 @@ footer .footer-content__2 li:nth-child(1) {
   font-weight: 300;
 }
 
+.active-modal {
+  opacity: 1 !important;
+  display: flex !important;
+}
+
+.modal-overlay {
+  opacity: 0;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+  top: 0;
+  right: 0;
+}
+
+.booking-modal {
+  opacity: 0;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 50%;
+  height: 100vh;
+  border: 2px solid white;
+  background-color: rgb(255, 255, 255);
+  color: #010103;
+}
+@media (max-width: 1100px) {
+  .booking-modal {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .booking-modal {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .booking-modal {
+    top: 50%;
+  }
+}
+.booking-modal__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: #035388;
+  color: white;
+  align-items: center;
+}
+.booking-modal__title h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.booking-modal__title span {
+  cursor: pointer;
+}
+.booking-modal__car-info {
+  padding: 3rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #494949;
+}
+@media (max-width: 650px) {
+  .booking-modal__car-info {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+.booking-modal__car-info__carInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.booking-modal__car-info__carInfo h5 {
+  font-size: 2rem;
+  color: #035388;
+}
+.booking-modal__car-info__carInfo h6 {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+.booking-modal__car-info__carInfo p {
+  font-size: 1.6rem;
+  color: #5e5e5e;
+}
+.booking-modal__car-info__model {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.booking-modal__car-info__model h5 {
+  font-size: 2rem;
+  color: #035388;
+}
+.booking-modal__car-info__model img {
+  width: 100%;
+  height: auto;
+}
+.booking-modal__personalInfo {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.booking-modal__personalInfo h4 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #035388;
+  margin-bottom: 1.4rem;
+}
+.booking-modal .form {
+  display: flex;
+  flex-direction: column;
+}
+.booking-modal .form__1cols {
+  display: grid;
+  grid-template-columns: 1fr !important;
+}
+.booking-modal .form__1cols, .booking-modal .form__2cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+@media (max-width: 420px) {
+  .booking-modal .form__1cols, .booking-modal .form__2cols {
+    grid-template-columns: 1fr;
+  }
+}
+.booking-modal .form p {
+  font-size: 1.1rem;
+}
+.booking-modal .form span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.booking-modal .form label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #777;
+}
+.booking-modal .form input {
+  padding: 14px 15px;
+  background-color: #dbdbdb;
+  color: #555;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+}
+
+.reserve-button {
+  padding: 3rem;
+  text-align: center;
+}
+.reserve-button button {
+  background-color: #035388;
+  color: white;
+  padding: 2rem;
+  font-size: 2.4rem;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.reserve-button button:hover {
+  background-color: #003f69;
+  cursor: pointer;
+}
+
+.carInfo-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
 .banner {
   background-image: url("../images/Banner/banner.jpg");
   background-position: 50%;
@@ -1710,6 +1704,11 @@ footer .footer-content__2 li:nth-child(1) {
   background-repeat: no-repeat;
   background-size: auto;
   margin: 10rem 0 20rem 0;
+}
+@media (max-width: 800px) {
+  .faq-section {
+    background-image: none;
+  }
 }
 
 .faq-content {
