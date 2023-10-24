@@ -4,7 +4,7 @@ import { CAR_DATA } from "../components/Data/Data";
 
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner/Banner";
-import Model from "../components/Models/Model";
+import Fleet from "../components/Fleet/Fleet";
 import Divider from "../components/Divider/Divider";
 import Footer from "../components/Footer";
 
@@ -13,7 +13,7 @@ function Models() {
     <>
       <Navbar />
       <Banner name="Models" />
-      <Model carData={CAR_DATA} />
+      <Fleet carData={CAR_DATA} />
       <Divider />
       <Footer />
     </>

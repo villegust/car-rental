@@ -39,8 +39,8 @@ function Navbar() {
             </li>
             <li>
               {" "}
-              <Link className="models-link" to="/models">
-                Vehicle Models
+              <Link className="models-link" to="/fleet">
+                Our Fleet
               </Link>
             </li>
             <li>
@@ -88,8 +88,8 @@ function Navbar() {
             </li>
             <li>
               {" "}
-              <Link className="models-link" to="/models">
-                Vehicle Models
+              <Link className="models-link" to="/fleet">
+                Our Fleet
               </Link>
             </li>
             <li>

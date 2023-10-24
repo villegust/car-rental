@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 
-function Model({ carData }) {
+function Fleet({ carData }) {
   const navigate = useNavigate();
 
   const reserveBtn = () => {
@@ -70,4 +70,4 @@ function Model({ carData }) {
   );
 }
 
-export default Model;
+export default Fleet;
