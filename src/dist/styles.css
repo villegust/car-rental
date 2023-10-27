@@ -202,7 +202,12 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   align-items: center;
-  bottom: 3rem;
+  bottom: 10rem;
+}
+@media (max-width: 360px) {
+  .mobile-navbar__buttons {
+    bottom: 5rem;
+  }
 }
 .mobile-navbar__buttons__sign-in {
   color: #010103;
@@ -838,7 +843,7 @@ footer .footer-content__2 li:nth-child(1) {
   border: none;
 }
 .login-content__login-with button#facebook {
-  background-color: #4267B2;
+  background-color: #4267b2;
   color: #fff;
 }
 .login-content__login-with button#google {
@@ -942,7 +947,7 @@ footer .footer-content__2 li:nth-child(1) {
 }
 @media screen and (max-width: 500px) {
   .register-content {
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 2rem 4rem 2rem 4rem;
   }
 }
 .register-content__title {
@@ -970,7 +975,7 @@ footer .footer-content__2 li:nth-child(1) {
   border: none;
 }
 .register-content__register-with button#facebook {
-  background-color: #4267B2;
+  background-color: #4267b2;
   color: #fff;
 }
 .register-content__register-with button#google {
@@ -994,6 +999,12 @@ footer .footer-content__2 li:nth-child(1) {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+}
+@media screen and (max-height: 700px) {
+  .register-content__register {
+    margin: 0 auto;
+    padding: 0.75rem;
+  }
 }
 .register-content__register input {
   font-size: 1.6rem;
