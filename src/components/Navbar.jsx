@@ -62,7 +62,6 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-
           <div className="mobile-navbar__buttons">
             <Link className="mobile-navbar__buttons__sign-in" to="/login">
               Log In
